@@ -1,6 +1,7 @@
 # 0x00-ES6_basic
 
-Setup
+## Setup
+
 Install NodeJS 12.11.x
 (in your home directory):
 
@@ -13,29 +14,3 @@ $ npm -v
 6.11.3
 Install Jest, Babel, and ESLint
 in your project directory, install Jest, Babel and ESList by using the supplied package.json and run npm install.
-
-Configuration files
-Add the files below to your project directory
-
-package.json
-Click to show/hide file contents
-babel.config.js
-Click to show/hide file contents
-
-module.exports = {
-  presets: [
-    [
-      '@babel/preset-env',
-      {
-        targets: {
-          node: 'current',
-        },
-      },
-    ],
-  ],
-};
-
-.eslintrc.js
-Click to show/hide file contents
-Finally…
-Don’t forget to run npm install from the terminal of your project folder to install all necessary project dependencies.
