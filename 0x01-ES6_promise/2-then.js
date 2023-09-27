@@ -7,16 +7,16 @@ function handleResponseFromAPI(promise) {
       });
     }
   });
+  myPromise
+    .then(response => {
+      console.log('Got a response from the API');
+    })
+    .catch((response) => Error(response))
+    .finally((response) => {
+      console.log('Got a response from the API')
+    })
+
   return myPromise;
 }
-
-handleResponseFromAPI(true)
-  .then(response => {
-    console.log('Got a response from the API');
-  })
-  .catch((response) => Error(response))
-  .finally((response) => {
-    console.log('Got a response from the API')
-  })
 
 export default handleResponseFromAPI;
