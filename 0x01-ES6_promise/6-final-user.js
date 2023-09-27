@@ -5,7 +5,7 @@ import uploadPhoto from './5-photo-reject';
 function handleProfileSignup(firstName, lastName, fileName) {
   return Promise.allSettled([
       signUpUser(firstName, lastName),
-      uploadPhoto(fileName)
+      uploadPhoto(fileName),
     ])
     .then((res) => {
       const array = [];
