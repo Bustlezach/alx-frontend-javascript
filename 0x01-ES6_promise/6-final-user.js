@@ -6,9 +6,9 @@ function handleProfileSignup(firstName, lastName, fileName) {
   return Promise.allSettled([
     signUpUser(firstName, lastName),
     uploadPhoto(fileName)])
-    .then((response) => {
+    .then((res) => {
       const array = [];
-      response.forEach((index) => {
+      res.forEach((index) => {
         if (index.status === 'fulfilled') {
           array.push({
             status: index.status,
