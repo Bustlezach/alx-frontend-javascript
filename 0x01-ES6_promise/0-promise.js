@@ -8,7 +8,7 @@ export default function getResponseFromAPI() {
       resolve('I am an ALX SE student.');
     } else {
       // Failed
-      reject(new Error('Sorry, you are not an ALX student.'));
+      reject('Sorry, you are not an ALX student.');
     }
   });
   return myPromise;
