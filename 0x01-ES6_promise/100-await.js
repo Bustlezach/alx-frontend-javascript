@@ -8,13 +8,13 @@ async function asyncUploadUser() {
     return {
       photo,
       user,
-    }
+    };
 
   } catch (error) {
     return {
       photo: null,
       user: null,
-    }
+    };
   }
 }
 
