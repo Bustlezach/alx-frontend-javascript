@@ -35,7 +35,7 @@ class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
-    const calc = amount * conversionRate;
+    const calc = (amount * conversionRate);
     return calc;
   }
 }
