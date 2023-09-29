@@ -18,7 +18,7 @@ class HolbertonClass {
     if (hint === 'string') {
       return this._location;
     }
-    return 1;
+    return 42;
   }
 }
 
