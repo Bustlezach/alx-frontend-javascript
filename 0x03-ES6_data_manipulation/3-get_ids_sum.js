@@ -1,7 +1,4 @@
-function getStudentIdsSum(studentObjects) {
-  const studentIds = studentObjects.map(student => student.id);
-  const sum = studentIds.reduce((accumulator, current) => accumulator + current, 0);
-  return sum;
+function getListStudentIds(studentObjects) {
+  return studentObjects.reduce((accumulator, item) => accumulator + item.id, 0);
 }
-
-export default getStudentIdsSum;
+export default getListStudentIds;

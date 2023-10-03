@@ -1,13 +1,9 @@
-function cleanSet(sets, startString) {
-  if (startString === '') {
-    return '';
-  }
-
-  const cleanedValues = [...sets]
-    .filter(arr => arr.includes(startString))
-    .map(arr => arr.substring(startString.length));
-
-  return cleanedValues.join('-');
+function cleanSet(set, startString) {
+  let resultString = '';
+  if (!startString || !startString.length) return resultString;
+  set.forEach((item) => {
+    if (item && item.startsWith(startString)) resultString += `${item.slice(startString.length)}-`;
+  });
+  return resultString.slice(0, resultString.length - 1);
 }
-
 export default cleanSet;
